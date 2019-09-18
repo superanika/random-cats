@@ -1,0 +1,170 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(white, rgba(255, 166, 0, 0.514));
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.title {
+    height: 50px;
+    font-size: 20px;
+    text-align: right;
+    margin-top: 10px;
+    padding: 15px 25px 0;
+    line-height: 50px;
+    background-color: transparent;
+    align-self: baseline;
+    background-image: url('./gato_sentado.png');
+    background-position:top left; 
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.subtitle {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.select_cats {
+    cursor: pointer;
+    margin-bottom:  25px;
+    border: none;
+    border-bottom: 3px solid orange;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.carousel {
+    margin: 0;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 5px black;
+}
+.kitty {
+    z-index: 2;
+    width: 80px;
+    position: absolute;
+    top: -60px;
+    right: -5px;
+}
+.img_item {
+    height: 300px;
+    width: 300px;
+   object-fit: cover;
+   object-position: center;
+}
+.shuffle_button {
+    margin-top: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(white,rgb(226, 226, 226));
+    border: 4px solid orange;
+    border-radius: 25px;
+}
+.shuffle_button:hover {
+    box-shadow: 0 0 3px gray;
+}
+.radio_buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.label {
+    margin: 5px 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.label:hover {
+    text-decoration: underline;
+}
+
+.link {
+    color: black;
+    font-weight: bold;
+}
+.link:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+.disabled {
+    color: lightgray;
+    cursor: default;
+}
+.hide {
+    visibility: hidden;
+}
+
+@media all and (min-width: 768px) {
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+    }
+    .carousel {
+        margin: 0;
+        width: 350px;
+        height: 350px;
+        box-shadow: 0 0 5px black;
+    }
+    .title {
+        margin-top: 25px;
+        height: 100px;
+        padding: 55px 50px 0;
+        font-size: 36px;
+    }
+    .kitty {
+        z-index: 2;
+        width: 100px;
+        position: absolute;
+        top: -70px;
+        right: 0;
+    }
+    .img_item {
+        height: 350px;
+        width: 350px;
+    }
+    .subtitle {
+        font-size: 18px;
+        margin: 20px;
+    }
+    .radio_buttons {
+        width: 55%;
+    }
+    .footer {
+       height: 50px;
+       width: 150px;
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+    }
+    .select_cats {
+        margin-bottom:  45px;
+    }
+}
+
+
+
